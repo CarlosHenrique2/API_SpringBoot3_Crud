@@ -11,6 +11,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.Collection;
 
+@CrossOrigin(allowedHeaders = {"Authorization", "Origin"})
 @RestController
 @RequestMapping(value = "/tasks")
 public class TasksController {
